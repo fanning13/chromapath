@@ -1,0 +1,107 @@
+:root {
+  color: #30253d;
+  background: #fff8e8;
+  font-family: "Trebuchet MS", system-ui, sans-serif;
+}
+header {
+  border-bottom: 2px solid #30253d;
+}
+header a {
+  letter-spacing: -1px;
+}
+h1 {
+  letter-spacing: -3px;
+}
+h1 em {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 750;
+  color: #9d62c0;
+}
+.eyebrow {
+  font-weight: bold;
+  color: #9d62c0;
+}
+.intro {
+  position: relative;
+}
+.intro:after {
+  content: "✦ a happy little atlas ✦";
+  position: absolute;
+  right: 3%;
+  top: 40px;
+  background: #f9db83;
+  border: 2px solid #30253d;
+  border-radius: 12px;
+  padding: 16px;
+  transform: rotate(7deg);
+  box-shadow: 4px 4px 0 #30253d;
+  font-size: 15px;
+}
+.workspace {
+  grid-template-columns: 270px 1fr;
+  gap: 27px;
+}
+aside,
+.canvas {
+  border: 2px solid #30253d;
+  box-shadow: 5px 5px 0 #30253d;
+}
+aside {
+  background: #fffdf8;
+}
+.canvas {
+  background-color: #d9eee9;
+  background-image: radial-gradient(#8bbfb4 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+.canvas-top {
+  font-weight: bold;
+}
+button,
+select {
+  border: 1.5px solid #30253d;
+  background: #fff9ed;
+}
+button:hover {
+  background: #f5de99;
+  transform: rotate(-1deg);
+}
+#export {
+  background: #cdb7ea;
+}
+#swatches span {
+  border: 1.5px solid #30253d;
+  box-shadow: 1px 2px 0 #30253d;
+}
+#swatches span:nth-child(odd) {
+  transform: rotate(-5deg);
+}
+#map {
+  filter: drop-shadow(0 7px 0 #2d5b5225);
+}
+#status {
+  background: #fffdf4;
+  border: 1px dashed #6e9e92;
+  border-radius: 8px;
+  padding: 12px;
+}
+footer {
+  padding-top: 10px;
+  color: #736481;
+}
+@media (max-width: 850px) {
+  .intro:after {
+    display: none;
+  }
+}
+@media (max-width: 760px) {
+  .workspace {
+    grid-template-columns: 1fr;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  button:hover {
+    transform: none;
+  }
+}
